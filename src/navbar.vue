@@ -2,9 +2,8 @@
 	<nav>
     <!--<slot></slot>-->
 		<ul>
-			<li><a>Home</a></li>
-			<li><a>Tourneys</a></li>
-			<li><a>Login</a></li>
+			<li><router-link to="/">Home</router-link></li>
+			<li><router-link to="/login">Login</router-link></li>
 		</ul>
 	</nav>
 </template>

@@ -1,8 +1,11 @@
 <template>
 <div>
-	<navbar><p>This will go into the slot</p></navbar>
-	<router-view></router-view>
-	<!--<login> TEST FOR LOGIN  </login>-->
+	<bracket :rounds="rounds">
+		<template slot="player" slot-scope="{ player }">
+			{{ player.name }}
+		</template> 
+	   
+	</bracket>
 
 </div>
 	</template>
@@ -11,7 +14,6 @@
     import Bracket from "./Bracket";
     import navbar from "./navbar";
 	import login from "./login";
-	import Tourney from "./Tourney";
 
 var players = 8;
     var mock_db = { round1:{Player1:{id:'1', name: "Competitor 1"},
@@ -55,11 +57,11 @@ var players = 8;
         round += 1;
     }
     export default {
-        name: "app",
+        name: "tourney",
         components: {
             Bracket,
 			navbar,
-			login,
+			login
         },
         data() {
             return {
