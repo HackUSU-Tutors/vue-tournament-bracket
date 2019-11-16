@@ -3,14 +3,14 @@
 	<div class = "login_div">
         <p> {{greeting}} </p>
         <form>
-            <label for = "nameText" > Name: </label>
-            <input id = "nameText"  type = "text"  > </input>
+            <label for = "nameText" >Name:</label>
+            <input v-model="userName" id = "nameText"  type = "text"  > </input>
             <br>
             <label for = "emailText" > Email address: </label>
-            <input id = "emailText"  type = "email"  > </input>
+            <input v-model="email" id = "emailText"  type = "email"  > </input>
             <br>
             <label for = "passwordText" > Password: </label>
-            <input id = "passwordText"  type = "password"> </input>
+            <input  v-model="password" id = "passwordText"  type = "password"> </input>
             <br>
             <input @click="submit" type = "submit" value = "Sign Up"> </input>
         </form>
@@ -29,13 +29,19 @@
 		},  
 		data: function () {
 			return {
-			greeting: 'Sign Up'
+			greeting: 'Sign Up',
+            userName: "",
+            email: "",
+            password: ""
 			}
 		},
         methods: {
-            submit: () => {
-                console.log("DID I Sign up ... NO?")
-                axios.post('')
+            submit: function () {
+              
+                console.log(this.userName)
+                console.log(this.email)
+             
+   
             }
         }
     

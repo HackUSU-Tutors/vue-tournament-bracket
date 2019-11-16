@@ -4,10 +4,10 @@
         <p> {{greeting}} </p>
         <form>
             <label for = "emailText" > Email address: </label>
-            <input id = "emailText"  type = "email"  > </input>
+            <input v-model="email" id = "emailText"  type = "email"  > </input>
             <br>
             <label for = "passwordText" > Password: </label>
-            <input id = "passwordText"  type = "password"> </input>
+            <input v-model = "password" id = "passwordText"  type = "password"> </input>
             <br>
             <input @click="submit" type = "submit" value = "Log in"> </input>
         </form>
@@ -26,12 +26,15 @@
 		},  
 		data: function () {
 			return {
-			greeting: 'LOGIN OR GET OUT'
+			greeting: 'LOGIN OR GET OUT',
+            email: "null",
+            password: '',
 			}
 		},
         methods: {
-            submit: () => {
-                console.log("DID I DO IT?")
+            submit: function(){
+                console.log(this.email)
+                console.log(this.password)
             }
         }
     
