@@ -1,6 +1,6 @@
 <template>
 <div>
-	<navbar><p>This will go into the slot</p></navbar>
+	<navbar></navbar>
 	<router-view></router-view>
 	<!--<login> TEST FOR LOGIN  </login>-->
 
@@ -12,6 +12,7 @@
     import navbar from "./navbar";
 	import login from "./login";
 	import Tourney from "./Tourney";
+    import Register from "./register";
 
 var players = 8;
     var mock_db = { round1:{Player1:{id:'1', name: "Competitor 1"},

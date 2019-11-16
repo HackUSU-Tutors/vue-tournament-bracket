@@ -3,35 +3,37 @@
 	<div class = "login_div">
         <p> {{greeting}} </p>
         <form>
+            <label for = "nameText" > Name: </label>
+            <input id = "nameText"  type = "text"  > </input>
+            <br>
             <label for = "emailText" > Email address: </label>
             <input id = "emailText"  type = "email"  > </input>
             <br>
             <label for = "passwordText" > Password: </label>
             <input id = "passwordText"  type = "password"> </input>
             <br>
-            <input @click="submit" type = "submit" value = "Log in"> </input>
+            <input @click="submit" type = "submit" value = "Sign Up"> </input>
         </form>
 
-        <router-link to="/register">Register?</router-link>        
+        
     </div>
 </template>
 
 <script>
-    import axios from 'axios';
 
 	export default {
-			name: 'login',
+			name: 'register',
 			components: {
 
 		},  
 		data: function () {
 			return {
-			greeting: 'LOGIN OR GET OUT'
+			greeting: 'Sign Up'
 			}
 		},
         methods: {
             submit: () => {
-                console.log("DID I DO IT?")
+                console.log("DID I Sign up ... NO?")
             }
         }
     

@@ -3,6 +3,7 @@ import App from './App.vue';
 import Login from './login.vue';
 import Tourney from './Tourney.vue';
 import VueRouter from 'vue-router';
+import Register from './register';
 // import { homedir } from 'os';
 
 Vue.config.productionTip = false;
@@ -15,6 +16,7 @@ const routes = [
     { path: '/', component: Tourney},
     {path: '/login', component: Login },
     {path: '/tourney', component: NotFound },
+    {path: '/register', component: Register}
 ];
 
 const router = new VueRouter({
@@ -23,17 +25,8 @@ const router = new VueRouter({
 
 
 new Vue({
-    // data: {
-    //     // currentRoute: window.location.pathname
-    //     message: "Hi there"
-    // },
+
     router,
-    // computed: {
-    //     ViewComponent () {
-    //         console.log("aiuwehfuo")
-    //         console.log(this.currentRoute)
-    //         return routes[this.currentRoute] //TODO make a not found component
-    //     }
-    // },
+
     render: h => h(App)
 }).$mount('#app');
