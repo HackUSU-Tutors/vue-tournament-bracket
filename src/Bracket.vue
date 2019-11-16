@@ -46,6 +46,7 @@
 
 <style>
     .vtb-wrapper {
+        padding: 5% 25% 15%;
         display: flex;
     }
 </style>

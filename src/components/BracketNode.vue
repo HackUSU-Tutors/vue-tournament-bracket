@@ -101,6 +101,11 @@
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
     /* The tournament */
+
+    body{
+        /*background: #ababab;*/
+    }
+
     .vtb-item {
         display: flex;
         flex-direction: row-reverse;
