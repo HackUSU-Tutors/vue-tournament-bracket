@@ -140,20 +140,21 @@
     }
 
     .vtb-item-players .winner {
-        background-color: #66e666;
+        background-color: royalblue;
         
     }
 
     .vtb-item-players .defeated {
-        background-color: #c44444;
+        background-color: goldenrod;
     }
 
     .vtb-item-players .winner.highlight {
-        background-color: #88f888;
+        background-color: black;
+
     }
 
     .vtb-item-players .defeated.highlight {
-        background-color: #f66666;
+        background-color: black;
     }
     .vtb-item-players .waiting{
         background-color: #abbccd;

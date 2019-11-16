@@ -42,7 +42,7 @@ var players = 8;
             const player2 = 'Player' + (count + 1);
             const round_name = 'round' + round;
             game = {
-                player1: {id: mock_db[round_name][player1].id, name: mock_db[round_name][player1].name, det: true, winner: false},
+                player1: {id: mock_db[round_name][player1].id, name: mock_db[round_name][player1].name, det: true, winner: true},
                 player2: {id: mock_db[round_name][player2].id, name: mock_db[round_name][player2].name, det: true, winner: true},
             };
             count += 2;
