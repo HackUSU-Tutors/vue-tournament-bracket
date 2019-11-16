@@ -20,6 +20,7 @@
 </template>
 
 <script>
+    import axios from 'axios';
 
 	export default {
 			name: 'register',
@@ -34,6 +35,7 @@
         methods: {
             submit: () => {
                 console.log("DID I Sign up ... NO?")
+                axios.post('')
             }
         }
     

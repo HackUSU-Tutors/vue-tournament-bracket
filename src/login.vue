@@ -12,7 +12,7 @@
             <input @click="submit" type = "submit" value = "Log in"> </input>
         </form>
 
-        <router-link to="/register">Register?</router-link>        
+        <router-link to="/register">Sign Up?</router-link>        
     </div>
 </template>
 
